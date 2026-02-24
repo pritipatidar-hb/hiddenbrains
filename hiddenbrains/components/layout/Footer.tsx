@@ -3,7 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../../images/HB.logo.png";
 
-export const Footer: FC<{ data: any }> = ({ data }) => {
+import { SiteConfig } from "../HomeView";
+
+export const Footer: FC<{ data: { SITE_CONFIG: SiteConfig } }> = ({ data }) => {
   const { SITE_CONFIG } = data;
   const currentYear = new Date().getFullYear();
 

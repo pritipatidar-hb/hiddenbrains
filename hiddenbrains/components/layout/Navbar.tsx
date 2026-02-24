@@ -5,8 +5,21 @@ import greatPlace from "../../images/great-place-to-work.webp";
 import CascadingMenu from "./CascadingMenu";
 import NavDropdown from "./NavDropdown";
 import MobileMenu from "./MobileMenu";
+import React from "react";
 
-export default function Navbar({ data }: { data: any }) {
+interface MenuItem {
+  title: string;
+  url: string;
+  children?: MenuItem[];
+}
+
+export default function Navbar({ data }: {
+  data: {
+    SERVICES_MENU: MenuItem[];
+    SOLUTIONS_MENU: MenuItem[];
+    INDUSTRIES_MENU: MenuItem[];
+  }
+}) {
   const { SERVICES_MENU, SOLUTIONS_MENU, INDUSTRIES_MENU } = data;
 
   return (
@@ -57,19 +70,19 @@ export default function Navbar({ data }: { data: any }) {
             <NavDropdown label="Company" trigger="hover">
               <div className="mt-0 w-[260px] bg-white shadow-xl border-t-2 border-orange-500 py-1 rounded-lg">
                 {[
-                  "Company Profile",
-                  "Management Team",
-                  "Media Coverage",
-                  "Awards & Accolades",
-                  "Our Working Infrastructure",
-                  "Contact Us",
+                  { name: "Company Profile", href: "/company-profile" },
+                  { name: "Management Team", href: "#" },
+                  { name: "Media Coverage", href: "#" },
+                  { name: "Awards & Accolades", href: "#" },
+                  { name: "Our Working Infrastructure", href: "#" },
+                  { name: "Contact Us", href: "/contact" },
                 ].map((item) => (
                   <Link
-                    key={item}
-                    href="#"
+                    key={item.name}
+                    href={item.href}
                     className="block px-5 py-2 text-[15px] font-medium text-[#14133b] hover:text-orange-500 transition-colors "
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 ))}
               </div>
@@ -99,7 +112,7 @@ export default function Navbar({ data }: { data: any }) {
             <NavDropdown label="Industries">
               <div className="mt-0 w-[550px] bg-white shadow-2xl border-t-2 border-orange-500 p-8 -translate-x-1/2 left-1/2 absolute">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-10">
-                  {INDUSTRIES_MENU.map((item: any, index: number) => (
+                  {INDUSTRIES_MENU.map((item, index) => (
                     <Link
                       key={index}
                       href={item.url}
