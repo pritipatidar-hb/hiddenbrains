@@ -1,5 +1,6 @@
 "use client";
 
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 interface NavDropdownProps {
@@ -30,16 +31,7 @@ export default function NavDropdown({
             <button className="flex items-center text-[#14133b] hover:text-orange-500 py-4 h-full transition-colors text-[15px] font-medium
 ">
                 {label}
-                <svg
-                    className={`w-3 h-3 ml-1.5 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
-                        }`}
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                    viewBox="0 0 24 24"
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
+                <ChevronDown size={12} color="#97a4b3" />
             </button>
 
             {isOpen && <div className="absolute top-full left-0">{children}</div>}

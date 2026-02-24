@@ -35,16 +35,16 @@ export default function Navbar({ data }: { data: any }) {
               height="16"
               className="object-contain"
             /> */}
-             <Image
-                  src={greatPlace}
-                  alt="Great Place To Work"
-                  width={70}
-                  height={116}
-                  className="w-20 md:w-[100%] h-[58px] top-[-15px] object-contain shadow-lg"
-                />
+            <Image
+              src={greatPlace}
+              alt="Great Place To Work"
+              width={70}
+              height={116}
+              className="w-20 md:w-[100%] h-[58px] top-[-15px] object-contain shadow-lg"
+            />
             <div className="relative h-16 flex items-center">
               <Link href="/" className="absolute top-0 left-0 z-[60]">
-               
+
               </Link>
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function Navbar({ data }: { data: any }) {
           {/* Company Dropdown */}
           <li className="h-full flex items-center group relative">
             <NavDropdown label="Company" trigger="hover">
-              <div className="mt-0 w-50  bg-white shadow-xl border-t-2 border-orange-500 py-2">
+              <div className="mt-0 w-[260px] bg-white shadow-xl border-t-2 border-orange-500 py-1 rounded-lg">
                 {[
                   "Company Profile",
                   "Management Team",
@@ -67,7 +67,7 @@ export default function Navbar({ data }: { data: any }) {
                   <Link
                     key={item}
                     href="#"
-                    className="block px-6 py-3 text-[14px] text-gray-700 hover:text-orange-500 transition-colors text-[15px] font-medium text-[#14133b] "
+                    className="block px-5 py-2 text-[15px] font-medium text-[#14133b] hover:text-orange-500 transition-colors "
                   >
                     {item}
                   </Link>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 interface MenuItem {
     title: string;
@@ -34,7 +35,7 @@ export default function CascadingMenu({ items, level = 0 }: CascadingMenuProps) 
               ${activeIndex === index ? "text-orange-500" : "text-gray-700"}`}
                         >
                             {item.title}
-                            {item.children && <span className="text-[10px]">▶</span>}
+                            {item.children && <span className="text-[10px]"><ChevronRight color="#97a4b3" size={12} /></span>}
                         </Link>
 
                         {item.children && activeIndex === index && (
