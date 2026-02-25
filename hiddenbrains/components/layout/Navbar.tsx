@@ -80,7 +80,7 @@ export default function Navbar({ data }: {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="block px-5 py-2 text-[15px] font-medium text-[#14133b] hover:text-orange-500 transition-colors "
+                    className="block px-5 py-2 text-[13px] font-medium text-[#14133b] hover:text-orange-500 transition-colors "
                   >
                     {item.name}
                   </Link>
@@ -109,7 +109,7 @@ export default function Navbar({ data }: {
           </li>
 
           <li className="h-full flex items-center group relative">
-            <NavDropdown label="Industries">
+            {/* <NavDropdown label="Industries">
               <div className="mt-0 w-[550px] bg-white shadow-2xl border-t-2 border-orange-500 p-8 -translate-x-1/2 left-1/2 absolute">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-10">
                   {INDUSTRIES_MENU.map((item, index) => (
@@ -123,9 +123,40 @@ export default function Navbar({ data }: {
                   ))}
                 </div>
               </div>
+            </NavDropdown> */}
+            <NavDropdown label="Industries">
+              <div className="absolute left-1/2 -translate-x-1/2 
+                  w-[370px] 
+                  bg-white 
+                  rounded-lg 
+                  shadow-[0_20px_60px_rgba(0,0,0,0.08)] 
+                  border-t-[3px] border-orange-500 
+                  p-10">
+
+                <div className="grid grid-cols-2 gap-y-6 relative">
+
+                  {/* Vertical Divider */}
+                  <div className="absolute left-1/2 ml-[-15px] top-0 h-full w-px bg-gray-200"></div>
+
+                  {INDUSTRIES_MENU.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={item.url}
+                      className="text-[13px] 
+                     font-medium 
+                     text-[#1f2b4d] 
+                     hover:text-orange-500 
+                     transition-colors 
+                     duration-300"
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </NavDropdown>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></div>
-          </li>
+          </li >
 
           <li className="h-full flex items-center group relative">
             <Link href="#" className="py-4 hover:text-orange-500 transition-colors text-[15px] font-medium text-[#14133b]">
@@ -147,10 +178,10 @@ export default function Navbar({ data }: {
             </Link>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></div>
           </li>
-        </ul>
+        </ul >
 
         {/* Right Section */}
-        <div className="hidden md:flex items-center h-full">
+        < div className="hidden md:flex items-center h-full" >
           <button className="text-gray-800 px-6 h-full flex items-center hover:bg-gray-50 transition-colors">
             <svg
               className="w-8 h-8"
@@ -172,10 +203,10 @@ export default function Navbar({ data }: {
           >
             Contact Us
           </Link>
-        </div>
+        </div >
 
         <MobileMenu />
-      </div>
-    </nav>
+      </div >
+    </nav >
   );
 }

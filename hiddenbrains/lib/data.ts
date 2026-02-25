@@ -486,5 +486,108 @@ export async function getData() {
             "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2021/07/client-logo-07.webp",
 
         ],
+        COMPANY_PROFILE: {
+            CORE_VALUES: {
+                subtitle: "DNA of Our Values",
+                title: "Our Core Values Describe How We Conduct Business",
+                leftValues: [
+                    {
+                        title: "Operational Excellence",
+                        desc: "High-performance technology solutions for operational excellence.",
+                        icon: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2017/07/operational-icon.png",
+                    },
+                    {
+                        title: "Eye for Innovation",
+                        desc: "Embrace new tools to drive innovation and path-breaking solutions.",
+                        icon: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2017/07/eye-innovation-icon.png",
+                    },
+                    {
+                        title: "Industry Differentiation",
+                        desc: "Leverage latest emerging technologies to create differentiated positioning.",
+                        icon: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2017/07/industry-diff-icon.png",
+                    },
+                ],
+                rightValues: [
+                    {
+                        title: "Quality Centric Work",
+                        desc: "Providing clients with services of the highest quality standards.",
+                        icon: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2017/07/qualitywork-icon.png",
+                    },
+                    {
+                        title: "Integrated Workflow",
+                        desc: "Streamlined workflow to respond to clients’ needs today & tomorrow.",
+                        icon: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2017/07/integrated-workflow-icon.png",
+                    },
+                    {
+                        title: "Transparency in Work",
+                        desc: "Complete transparency and accountability throughout development.",
+                        icon: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2017/07/transparencywork-icon.png",
+                    },
+                ],
+                dnaImage: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2016/06/DNA-image.png"
+            },
+            PHILOSOPHY: {
+                title: "Our Business Philosophy",
+                items: [
+                    {
+                        title: "Vision",
+                        desc: "“Our vision is to be a global leader in IT solutions and services with impetus on Innovation, Productivity, and implementation of ethical Business Strategies – with the ultimate aim of giving back to the society.”",
+                        image: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2016/11/Vision-img.jpg",
+                        icon: "eye",
+                        color: "blue"
+                    },
+                    {
+                        title: "Mission",
+                        desc: "“Our mission is to create innovative products and deliver excellence in services with constant emphasis on engineering, process quality and customer satisfaction – We add value to your business.”",
+                        image: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2016/11/Mission-img.jpg",
+                        icon: "target",
+                        color: "orange"
+                    },
+                    {
+                        title: "Quality Policy",
+                        desc: "“We DELIVER effective quality solutions and services to our customers – meeting project requirements and achieving continual excellence in all our solutions and services – guided by defined global standards in quality management.”",
+                        image: "https://cdn-fdiob.nitrocdn.com/HbitivJBuLhibWNKENaXSPjRdSdrKXLC/assets/images/optimized/rev-748de10/www.hiddenbrains.co.uk/wp-content/uploads/2016/11/Qualitypolicy-img.jpg",
+                        icon: "medal",
+                        color: "dark"
+                    }
+                ]
+            },
+            DIFFERENTIATORS: {
+                subtitle: "A Few Reasons Why We’re Different",
+                title: "With 22+ years of experience, Hidden Brains will surpass your expectations.",
+                items: [
+                    {
+                        title: "Latest Technology, Diversified Talent",
+                        desc: "We are backed by the latest technologies proficiently utilized by talented and highly experienced resources with expertise in diverse fields.",
+                        icon: "lightbulb",
+                        bgColor: "bg-[#eef8ff]"
+                    },
+                    {
+                        title: "Technical Requirement, Our Expertise",
+                        desc: "We work on your project in a consultative manner by keeping your requirements and feedback the topmost priority. Client satisfaction is an achievement for us.",
+                        icon: "file-text",
+                        bgColor: "bg-[#fdf3e8]"
+                    },
+                    {
+                        title: "Meticulous Work, Innovative Ideas",
+                        desc: "Experienced developers working for our company have an eye for innovation and assure meticulous development work, thus earning us repetitive business.",
+                        icon: "award",
+                        bgColor: "bg-[#ededf5]"
+                    }
+                ]
+            },
+            STATS: {
+                title: "We help you Succeed...",
+                description: "We are a team of innovative thinkers who aspire to incredible things. Our team endeavours to deliver winning web and mobile solutions\nadhering to quality and excellence.",
+                stats: [
+                    { count: "22", symbol: "+", label: "Years of Experience", icon: "stat-building" },
+                    { count: "1000", symbol: "+", label: "Mobile Applications", icon: "stat-mobile" },
+                    { count: "30", symbol: "+", label: "Projects", icon: "stat-desktop" },
+                    { count: "125", symbol: "+", label: "Expert Professionals", icon: "stat-users" },
+                    { count: "2400", symbol: "+", label: "Client Base", icon: "stat-user" },
+                    { count: "39", symbol: "+", label: "Industries Served", icon: "stat-industry" }
+                ]
+            }
+        }
     };
 }

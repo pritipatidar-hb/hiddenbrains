@@ -30,7 +30,7 @@ export default function CascadingMenu({ items, level = 0 }: CascadingMenuProps) 
                     >
                         <Link
                             href={item.url}
-                            className={`flex justify-between items-center px-6 py-3 text-[14px] font-medium
+                            className={`flex justify-between items-center px-6 py-3 text-[13px] font-medium
               hover:text-orange-500 transition-colors
               ${activeIndex === index ? "text-orange-500" : "text-gray-700"}`}
                         >

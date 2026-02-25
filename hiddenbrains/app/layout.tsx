@@ -6,7 +6,7 @@ import { getData } from "@/lib/data";
 import Contact from "@/components/layout/Contact";
 
 export const metadata: Metadata = {
-  title: "Corporate IT Services",
+  title: "HiddenBrains",
   description: "Enterprise-grade IT services and solutions.",
 };
 
