@@ -181,7 +181,7 @@ export default function Navbar({ data }: {
         </ul >
 
         {/* Right Section */}
-        < div className="hidden md:flex items-center h-full" >
+        <div className="hidden lg:flex items-center h-full">
           <button className="text-gray-800 px-6 h-full flex items-center hover:bg-gray-50 transition-colors">
             <svg
               className="w-8 h-8"
@@ -205,7 +205,7 @@ export default function Navbar({ data }: {
           </Link>
         </div >
 
-        <MobileMenu />
+        <MobileMenu data={data} />
       </div >
     </nav >
   );

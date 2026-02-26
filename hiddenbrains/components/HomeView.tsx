@@ -26,6 +26,8 @@ export interface Service {
     title: string;
     description: string;
     iconBgColor: string;
+    iconColor: string;
+    accentColor: string;
     link: string;
 }
 

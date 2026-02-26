@@ -42,7 +42,7 @@ export default async function CompanyProfilePage() {
                                         alt="Company Profile"
                                         width={600}
                                         height={600}
-                                        className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                                        className="w-full h-auto transition-transform duration-500"
                                     />
                                 </div>
                             </div>

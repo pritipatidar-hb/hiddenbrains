@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
+import ReCaptchaCheckbox from './ReCaptchaCheckbox';
 
 const ContactForm = () => (
     <div className="w-full">
@@ -26,17 +27,7 @@ const ContactForm = () => (
                 </div>
             </div>
             <textarea placeholder="Project Description" rows={6} className="w-full bg-white/60 border border-gray-200 rounded-lg px-6 py-4 text-sm  md:[15px] text-[#6a7c92] focus:outline-none focus:border-[#f49b1e] focus:bg-white transition-all resize-none"></textarea>
-            <div className="bg-[#f9f9f9] border border-gray-200 p-4 rounded-lg flex items-center justify-between max-w-[300px]">
-                <div className="flex items-center">
-                    <div className="w-6 h-6 border-2 border-gray-300 rounded mr-3 bg-white"></div>
-                    <span className="text-sm font-medium text-gray-600">I&apos;m not a robot</span>
-                </div>
-                <div className="text-center">
-                    <div className="w-8 h-8 mx-auto mb-1"><svg viewBox="0 0 24 24" className="w-full h-full text-blue-500"><path fill="currentColor" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20ZM12,6a6,6,0,1,0,6,6A6,6,0,0,0,12,6Z" /></svg></div>
-                    <div className="text-[10px] text-gray-400 leading-none">reCAPTCHA</div>
-                    <div className="text-[8px] text-gray-400 leading-none">Privacy - Terms</div>
-                </div>
-            </div>
+            <ReCaptchaCheckbox />
             <div className="pt-2">
                 <button type="submit" className="w-full py-[10px] px-[30px] bg-[#f49b1e] text-white font-medium rounded-sm hover:bg-[#e08b1a] transition-all duration-300 shadow-lg shadow-orange-500/20 uppercase text-[15px] tracking-wider">Send Message</button>
             </div>

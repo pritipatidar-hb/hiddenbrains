@@ -343,19 +343,23 @@ export async function getData() {
         SERVICES: [
             {
                 id: "01",
-                title: "Web Application Development",
-                description: "Hidden Brains UK offers Website Development Services UK for diverse industry verticals to simplify complex business workflows.",
-                icon: "window",
-                link: "/web-design-development",
+                title: "Mobile Apps Development", // Found originally as id 02
+                description: "A leading mobile application development company Hidden Brains UK offers a wide range of mobile app services.",
+                icon: "mobile",
+                link: "/mobile-application-development",
                 iconBgColor: "bg-orange-50",
+                iconColor: "text-[#f29111]",
+                accentColor: "bg-[#f29111]",
             },
             {
                 id: "02",
-                title: "Mobile Apps Development",
-                description: "A leading mobile application development company hidden brains UK offers a wide range of mobile app services.",
-                icon: "mobile",
-                link: "/mobile-application-development",
+                title: "Web Application Development", // Found originally as id 01
+                description: "Hidden Brains UK offers Website Development Services UK for diverse industry verticals to simplify complex business workflows.",
+                icon: "window",
+                link: "/web-design-development",
                 iconBgColor: "bg-pink-50",
+                iconColor: "text-[#f06292]",
+                accentColor: "bg-[#f06292]",
             },
             {
                 id: "03",
@@ -364,6 +368,8 @@ export async function getData() {
                 icon: "users",
                 link: "/hire-dedicated-developers",
                 iconBgColor: "bg-purple-50",
+                iconColor: "text-[#7e57c2]",
+                accentColor: "bg-[#7e57c2]",
             },
             {
                 id: "04",
@@ -372,6 +378,8 @@ export async function getData() {
                 icon: "cpu",
                 link: "/emerging-technology-services",
                 iconBgColor: "bg-yellow-50",
+                iconColor: "text-[#fb8c00]",
+                accentColor: "bg-[#fb8c00]",
             },
             {
                 id: "05",
@@ -380,6 +388,8 @@ export async function getData() {
                 icon: "gamepad",
                 link: "/game-development",
                 iconBgColor: "bg-red-50",
+                iconColor: "text-[#ff5252]",
+                accentColor: "bg-[#ff5252]",
             },
             {
                 id: "06",
@@ -388,6 +398,8 @@ export async function getData() {
                 icon: "shopping-cart",
                 link: "/open-source-customization",
                 iconBgColor: "bg-blue-50",
+                iconColor: "text-[#03a9f4]",
+                accentColor: "bg-[#03a9f4]",
             },
         ],
         PROJECTS: [

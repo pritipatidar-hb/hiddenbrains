@@ -54,21 +54,25 @@ export const HERO_SLIDES = [
 export const SERVICES = [
   {
     id: "01",
-    title: "Web Application Development",
-    description:
-      "Hidden Brains UK offers Website Development Services UK for diverse industry verticals to simplify complex business workflows.",
-    icon: "window",
-    link: "/web-design-development",
-    iconBgColor: "bg-orange-50",
-  },
-  {
-    id: "02",
-    title: "Mobile Apps Development",
+    title: "Mobile Apps Development", // Found originally as id 02
     description:
       "A leading mobile application development company Hidden Brains UK offers a wide range of mobile app services.",
     icon: "mobile",
     link: "/mobile-application-development",
+    iconBgColor: "bg-orange-50",
+    iconColor: "text-[#f29111]",
+    accentColor: "bg-[#f29111]",
+  },
+  {
+    id: "02",
+    title: "Web Application Development", // Found originally as id 01
+    description:
+      "Hidden Brains UK offers Website Development Services UK for diverse industry verticals to simplify complex business workflows.",
+    icon: "window",
+    link: "/web-design-development",
     iconBgColor: "bg-pink-50",
+    iconColor: "text-[#f06292]",
+    accentColor: "bg-[#f06292]",
   },
   {
     id: "03",
@@ -78,36 +82,41 @@ export const SERVICES = [
     icon: "users",
     link: "/hire-dedicated-developers",
     iconBgColor: "bg-purple-50",
+    iconColor: "text-[#7e57c2]",
+    accentColor: "bg-[#7e57c2]",
   },
-
-  // ✅ Added Services
-
   {
     id: "04",
     title: "Emerging Technologies Services",
     description:
       "Leverage the power of wearables, big data, IoT, iBeacon, AWS & Augmented Reality to gain first-mover advantage.",
-    icon: "cpu", // or "lightbulb" depending on your icon library
+    icon: "cpu",
     link: "/emerging-technology-services",
     iconBgColor: "bg-yellow-50",
+    iconColor: "text-[#fb8c00]",
+    accentColor: "bg-[#fb8c00]",
   },
   {
     id: "05",
     title: "Game Development Services",
     description:
       "Highly interactive games with stunning animations for all platforms including Android, iOS, iPad & Windows.",
-    icon: "gamepad", // if using lucide or heroicons
+    icon: "gamepad",
     link: "/game-development",
     iconBgColor: "bg-red-50",
+    iconColor: "text-[#ff5252]",
+    accentColor: "bg-[#ff5252]",
   },
   {
     id: "06",
     title: "Open Source Customization",
     description:
       "Custom CMS, Open Source & E-Commerce solutions delivering high-performance and scalable digital platforms.",
-    icon: "shopping-cart", // or "code"
+    icon: "shopping-cart",
     link: "/open-source-customization",
     iconBgColor: "bg-blue-50",
+    iconColor: "text-[#03a9f4]",
+    accentColor: "bg-[#03a9f4]",
   },
 ];
 export const PROJECTS = [
