@@ -18,9 +18,9 @@ export const Footer: FC<{ data: { SITE_CONFIG: SiteConfig } }> = ({ data }) => {
           <div className="mb-6 md:mb-0">
             <h4 className="text-lg font-bold mb-4 uppercase tracking-wider text-white/90">Support</h4>
             <ul className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-gray-300">
-              <li><Link href="https://www.hiddenbrains.co.uk/company-profile.html" className="hover:text-[#f49b1e] transition-colors">Company</Link></li>
-              <li><Link href="https://www.hiddenbrains.co.uk/management-team.html" className="hover:text-[#f49b1e] transition-colors">Management Team</Link></li>
-              <li><Link href="https://www.hiddenbrains.co.uk/video-testimonial.html" className="hover:text-[#f49b1e] transition-colors">Client Testimonial</Link></li>
+              <li><Link href="/company-profile" className="hover:text-[#f49b1e] transition-colors">Company</Link></li>
+              <li><Link href="/management-team" className="hover:text-[#f49b1e] transition-colors">Management Team</Link></li>
+              <li><Link href="/testimonials" className="hover:text-[#f49b1e] transition-colors">Client Testimonial</Link></li>
               <li><Link href="https://www.hiddenbrains.co.uk/portfolio.html" className="hover:text-[#f49b1e] transition-colors">Our Work</Link></li>
             </ul>
           </div>
@@ -81,10 +81,10 @@ export const Footer: FC<{ data: { SITE_CONFIG: SiteConfig } }> = ({ data }) => {
             <h4 className="text-lg font-bold mb-6 text-white tracking-wide uppercase text-sm">Quick Links</h4>
             <ul className="space-y-4 text-sm text-gray-400">
               <li><Link href="#" className="hover:text-white transition-colors">Blog</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Infrastructure</Link></li>
+              <li><Link href="/working-infrastructure" className="hover:text-white transition-colors">Infrastructure</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors">Media Coverage</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Awards & Accolades</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Contact Us</Link></li>
+              <li><Link href="/awards-accolades" className="hover:text-white transition-colors">Awards & Accolades</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -111,7 +111,7 @@ export const Footer: FC<{ data: { SITE_CONFIG: SiteConfig } }> = ({ data }) => {
         {/* Awards & Rating Section */}
         <div className="flex flex-col lg:flex-row justify-between items-center py-10 border-t border-white/10 gap-8">
           <div className="flex-shrink-0">
-            <Link href="/awards-accolades.html">
+            <Link href="/awards-accolades">
               <Image
                 src="https://www.hiddenbrains.co.uk/wp-content/uploads/2025/09/foot-one-image.jpeg"
                 alt="Hidden Brains Awards"

@@ -6,6 +6,7 @@ import CascadingMenu from "./CascadingMenu";
 import NavDropdown from "./NavDropdown";
 import MobileMenu from "./MobileMenu";
 import React from "react";
+import { ChevronRight } from "lucide-react";
 
 interface MenuItem {
   title: string;
@@ -71,19 +72,45 @@ export default function Navbar({ data }: {
               <div className="mt-0 w-[260px] bg-white shadow-xl border-t-2 border-orange-500 py-1 rounded-lg">
                 {[
                   { name: "Company Profile", href: "/company-profile" },
-                  { name: "Management Team", href: "#" },
-                  { name: "Media Coverage", href: "#" },
-                  { name: "Awards & Accolades", href: "#" },
-                  { name: "Our Working Infrastructure", href: "#" },
+                  { name: "Management Team", href: "/management-team" },
+                  {
+                    name: "Media Coverage",
+                    href: "#",
+                    hasSubmenu: true,
+                    children: [{ name: "Testimonial", href: "/testimonials" }]
+                  },
+                  { name: "Awards & Accolades", href: "/awards-accolades" },
+                  { name: "Our Working Infrastructure", href: "/working-infrastructure" },
                   { name: "Contact Us", href: "/contact" },
                 ].map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="block px-5 py-2 text-[13px] font-medium text-[#14133b] hover:text-orange-500 transition-colors "
-                  >
-                    {item.name}
-                  </Link>
+                  <div key={item.name} className="relative group/sub">
+                    <Link
+                      href={item.href}
+                      className="flex items-center justify-between px-5 py-2 text-[13px] font-medium text-[#14133b] hover:text-orange-500 transition-colors"
+                    >
+                      <span>
+                        {item.name}
+                      </span>
+                      {item.hasSubmenu && (
+                        <ChevronRight size={14} className="text-gray-300" />
+                      )}
+                    </Link>
+                    {item.children && (
+                      <div className="absolute left-full top-[-10px] ml-2 hidden group-hover/sub:block">
+                        <div className="bg-white shadow-[0_10px_30px_rgba(0,0,0,0.1)] py-4 px-6 rounded-xl whitespace-normal">
+                          {item.children.map((child) => (
+                            <Link
+                              key={child.name}
+                              href={child.href}
+                              className="text-[15px] font-medium text-[#14133b] hover:text-orange-500 transition-colors"
+                            >
+                              {child.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             </NavDropdown>

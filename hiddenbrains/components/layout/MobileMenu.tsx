@@ -108,7 +108,7 @@ export default function MobileMenu({ data }: MobileMenuProps) {
                                     <div className="pl-4 bg-gray-50/50">
                                         {[
                                             { name: "Company Profile", href: "/company-profile" },
-                                            { name: "Management Team", href: "#" },
+                                            { name: "Management Team", href: "/management-team" },
                                             { name: "Media Coverage", href: "#" },
                                             { name: "Awards & Accolades", href: "#" },
                                             { name: "Our Working Infrastructure", href: "#" },
