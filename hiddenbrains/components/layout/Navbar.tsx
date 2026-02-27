@@ -186,7 +186,7 @@ export default function Navbar({ data }: {
           </li >
 
           <li className="h-full flex items-center group relative">
-            <Link href="#" className="py-4 hover:text-orange-500 transition-colors text-[15px] font-medium text-[#14133b]">
+            <Link href="/our-clients" className="py-4 hover:text-orange-500 transition-colors text-[15px] font-medium text-[#14133b]">
               Our Clients
             </Link>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></div>

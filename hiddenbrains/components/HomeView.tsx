@@ -10,6 +10,7 @@ import { TestimonialsSection } from "./home/TestimonialsSection";
 import { AwardsSection } from "./home/AwardsSection";
 import { StatsSection } from "./home/StatsSection";
 import { BlogSection } from "./home/BlogSection";
+import Contact from "./layout/Contact";
 
 // --- Main Component ---
 
@@ -195,6 +196,7 @@ export default function HomeView({ data }: {
                 title={HOME_CONTENT.BLOG_SECTION.title}
                 posts={BLOG_POSTS}
             />
+            <Contact data={data} />
         </main>
     );
 }

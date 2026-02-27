@@ -4,6 +4,7 @@ import { Eye, Target, Medal, Lightbulb, FileText, Award } from "lucide-react";
 import companyProfileImg from "../../images/companyprofile-img.webp";
 import { StatsSection } from "@/components/home/StatsSection";
 import { getData } from "@/lib/data";
+import Contact from "@/components/layout/Contact";
 
 export const metadata = {
     title: "Company Profile | Hidden Brains",
@@ -219,6 +220,7 @@ export default async function CompanyProfilePage() {
                 stats={COMPANY_PROFILE.STATS.stats}
                 isLight={true}
             />
+            <Contact data={data} />
         </main>
     );
 }

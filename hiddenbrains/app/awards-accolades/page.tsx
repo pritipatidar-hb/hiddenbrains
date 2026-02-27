@@ -116,7 +116,7 @@ export default async function AwardsAccoladesPage() {
             </section>
 
             {/* Contact Section */}
-            {/* <Contact data={data} /> */}
+            <Contact data={data} />
         </main>
     );
 }

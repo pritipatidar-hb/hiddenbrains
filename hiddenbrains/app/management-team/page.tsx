@@ -1,9 +1,14 @@
 import React from 'react';
 import banner from "../../images/management-team-Banner-2.jpg";
 import { getManagementTeamData } from '@/lib/management-team-data';
+import { getData } from '@/lib/data';
+import Contact from '@/components/layout/Contact';
 
 const ManagementTeamPage = async () => {
-    const data = await getManagementTeamData();
+    const [teamData, globalData] = await Promise.all([
+        getManagementTeamData(),
+        getData()
+    ]);
 
     return (
         <div className="main-content loaded pt-16 bg-white text-slate-900">
@@ -16,10 +21,10 @@ const ManagementTeamPage = async () => {
                     <div className="absolute inset-0 bg-black/30"></div>
                     <div className="container mx-auto px-4 relative z-10">
                         <div className="cd-intro mo-title-bar">
-                            <h1 className="text-[48px] leading-[54px] tracking-[0px] font-bold text-white mb-2 ml-[100px]">{data.HERO.title}</h1>
+                            <h1 className="text-[48px] leading-[54px] tracking-[0px] font-bold text-white mb-2 ml-[100px]">{teamData.HERO.title}</h1>
                             <div className="mo-path text-[14px] font-medium text-white flex items-center">
                                 <div className="mo-path-inner flex items-center ml-[100px]">
-                                    {data.HERO.breadcrumbs.map((crumb, index) => (
+                                    {teamData.HERO.breadcrumbs.map((crumb, index) => (
                                         <React.Fragment key={crumb.label}>
                                             {index > 0 && <span className="mx-2 text-white">/</span>}
                                             {crumb.current ? (
@@ -40,15 +45,15 @@ const ManagementTeamPage = async () => {
             <div className="vc_row wpb_row vc_row-fluid bg-white py-16">
                 <div className="container mx-auto px-4 max-w-7xl">
                     <div className="mo-title-box title-box-style2 text-center mb-12">
-                        <h5 className="text-[#bdbbb0] text-[12px] font-medium uppercase tracking-[4px] mb-4">{data.PATH_FINDERS.subtitle}</h5>
-                        <h2 className="text-[36px] md:text-[40px] font-bold text-[#14133b] mb-6 leading-tight">{data.PATH_FINDERS.title}</h2>
+                        <h5 className="text-[#bdbbb0] text-[12px] font-medium uppercase tracking-[4px] mb-4">{teamData.PATH_FINDERS.subtitle}</h5>
+                        <h2 className="text-[36px] md:text-[40px] font-bold text-[#14133b] mb-6 leading-tight">{teamData.PATH_FINDERS.title}</h2>
                         <div className="content max-w-2xl mx-auto text-[#6a7c92] text-[15px] leading-relaxed">
-                            {data.PATH_FINDERS.description}
+                            {teamData.PATH_FINDERS.description}
                         </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-                        {data.PATH_FINDERS.members.map((member, idx) => (
+                        {teamData.PATH_FINDERS.members.map((member, idx) => (
                             <div key={idx} className="mo-team tpl3 text-center">
                                 <figure className="team-member group cursor-pointer">
                                     <div className="team-img mb-6 bg-[#f2f6f7] overflow-hidden">
@@ -72,7 +77,7 @@ const ManagementTeamPage = async () => {
 
             {/* Detailed Founder Sections */}
             <div className="container mx-auto px-4 py-20 max-w-7xl">
-                {data.FOUNDER_DETAILS.map((founder, idx) => (
+                {teamData.FOUNDER_DETAILS.map((founder, idx) => (
                     <div key={idx} className={`flex flex-wrap lg:flex-nowrap gap-16 mb-24 items-start ${idx % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
                         <div className="w-full lg:w-[40%]">
                             <div className="relative bg-[#f2f6f7] p-0 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
@@ -96,6 +101,7 @@ const ManagementTeamPage = async () => {
                     </div>
                 ))}
             </div>
+            <Contact data={globalData} />
         </div>
     );
 };

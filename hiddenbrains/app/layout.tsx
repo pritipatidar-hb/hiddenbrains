@@ -3,7 +3,6 @@ import "./globals.css";
 import Navbar from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
 import { getData } from "@/lib/data";
-import Contact from "@/components/layout/Contact";
 
 export const metadata: Metadata = {
   title: "HiddenBrains",
@@ -22,7 +21,6 @@ export default async function RootLayout({
       <body className="min-h-screen flex flex-col bg-slate-950 text-slate-100">
         <Navbar data={data} />
         <main className="flex-1">{children}</main>
-        <Contact data={data} />
         <Footer data={data} />
       </body>
     </html>
